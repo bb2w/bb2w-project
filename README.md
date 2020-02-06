@@ -1,6 +1,6 @@
 # Project
 
-The Building Block To Web (BB2W) project aims to build a platform where it is possible to create and manage component-oriented applications, aiming to simplify the development of websites, web systems, SPA, Apps that are initially based on webview, and may be extended in the future Apps that use native build technology, also facilitating publication in production through an orchestrator or container, while also facilitating the creation and maintenance of complementary services such as databases, data analysis services, queues and any other necessary for these applications
+The Building Block To Web (BB2W) project aims to build a platform where it is possible to create and manage component-oriented applications, aiming to simplify the development of websites, web systems, SPAs, Apps that are initially based on webview, and may be extended in the future Apps that use native build technology, also facilitating publication in production through an orchestrator or container, while also facilitating the creation and maintenance of complementary services such as databases, data analysis services, queues and any other necessary for these applications
 
 # Orchestration / Cloud Servers
 
@@ -23,17 +23,17 @@ The application will be written purely in ES6 Javascript using NodeJS (https://n
 
 # Build
 
-To maintain compatibility with all versions of NodeJS the core application will use the Babel module as standard (https://babeljs.io/), for frontend files generated from the development using the platform, by default Webpack (https) : //webpack.js.org/), other build methods can be configured by project.
+To maintain compatibility with all versions of NodeJS the core application will use the Babel module as standard (https://babeljs.io/), for frontend files generated from the development using the platform, by default Webpack (https://webpack.js.org/), other build methods can be configured by project.
 
 # Test
 
-
+The application tests will be carried out using Chai(https://www.chaijs.com/), Mocha (https://mochajs.org/) and Supertest (https://github.com/visionmedia/supertest), so it will be possible to create a standardized structure of unit tests and HTTP tests, while maintaining the development standard ESLint (https://eslint.org/) will be used
 
 # Plugins
 
 Definition of plugins for BB2W and any and all complement to the application core that will be distributed through Node JS modules, preferably through NPM (https://www.npmjs.com/) and can be implemented through other methods following the good practices similar to the core, BB2W is committed to developing and keeping updated plugins for basic application operation.
 
-Preferably, plugins should not require application reboot, only in specific cases that change core configurations or routes, the plugins may require in the package.json to reboot or rebuild the application, the installation of plugins occurred by means of a command in the terminal, via Application API or the graphical interface that will be made available at installation.
+Preferably, plugins should not require application reboot, only in specific cases that change core configurations or routes, the plugins may require in the **package.json** to reboot or rebuild the application, the installation of plugins occurred by means of a command in the terminal, API or the graphical interface that will be made available at installation.
 
 ### The standard for developing plugins will be released and linked in this document as soon as possible
 
@@ -49,10 +49,30 @@ The fully web interface will be developed using plugins compatible with Atom (ht
 
 **Tooltips** - System of hints or subtitles that can be configured in all interface components and plugins
 
-**contextmenu** - Menu accessible by clicking with the right mouse button, which can be assigned to any component and plugin
+**Contextmenu** - Menu accessible by clicking with the right mouse button, which can be assigned to any component and plugin
 
 **Tabs** - Side or top flap system that can be used in any component or plugin, which has options for iconography, close button and drop down
 
 **Treeview** - Treeview system that can be used to display files from a given directory, with options to rename file, drop down, multi levels
 
 **Content panels** - Multi-screen content manager, where it is possible to order several screens with code or other type of functionality, still with the ability to organize several tabs as well as all IDEs available on the market
+
+# Modules 
+
+Below is the list of modules that will be used in the project for both structural features and layout, remembering that the IDE will be coded in Javascript and its frontend developed based on the Vuejs framework (https://vuejs.org/)
+
+### IDE Core
+
+**Layout** - Vuetify (https://vuetifyjs.com/)
+
+**Contents panels** - GoldenLayout (https://golden-layout.com/)
+
+**Terminal** - Node-pty (https://www.npmjs.com/package/node-pty), xterm (https://www.npmjs.com/package/xterm)
+
+**Treeview** - Fancytree (https://github.com/mar10/fancytree)
+
+**Shortcuts** - Mousetrap (https://craig.is/killing/mice)
+
+**Scrollbar** - 
+
+**Editor** - Monaco (https://github.com/Microsoft/monaco-editor)
