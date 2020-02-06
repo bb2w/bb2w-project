@@ -2,6 +2,20 @@
 
 The Building Block To Web (BB2W) project aims to build a platform where it is possible to create and manage component-oriented applications, aiming to simplify the development of websites, web systems, SPAs, Apps that are initially based on webview, and may be extended in the future Apps that use native build technology, also facilitating publication in production through an orchestrator or container, while also facilitating the creation and maintenance of complementary services such as databases, data analysis services, queues and any other necessary for these applications
 
+# Introduction
+
+Why do a project like this? It is the first question of all and I will try to summarize, after more than 15 years of experience in the IT industry, working in companies as a programmer and doing business in the Startups market.
+
+Obviously there are great programmers who know a certain language like nobody, these professionals have the ability to code complex entire systems, with quality, performance and security alone, yet deliver documented, standardized, tested records in time.
+
+However, this is not the reality of 99% of the IT market in the world, and over the years it is increasingly difficult to find them, new developers tend to want to shorten the learning process, often giving up basic concepts that are very important to work with technology, and choose to use libraries and frameworks without understanding the process that occurs behind thousands of lines of code created by thousands of people, these professionals mostly deliver low quality software, without standardization, without documentation, without tests, that soon becomes a heavy legacy for companies, leaving only long hours of refactoring or the need to create the same project from scratch several times until reaching the minimum level accepted to stay in production.
+
+Therefore, there is nothing more natural than having a platform that can optimize and facilitate development to meet the increasingly complex demands, without the need for large programmers involved, and also abstracting all the concepts and good practices that take years of study to become. catch up. This project allows people without programming knowledge to develop web systems, apps, websites, just focusing on business rules, moving highly customizable pre-made components, defining simple events and connecting complex services such as databases, cloud servers, memory managers in a way almost childlike.
+
+Even for those who already have experience, the platform works as a facilitator to develop applications, and will allow customization via code, enhancing the range of features.
+
+I guarantee that a good part of Startups and technology companies die for the time it takes to develop their prototypes, and for the time it takes to maintain their legacies, that's why a project like this is so important for the Web to be accessible to business and people.
+
 # Orchestration / Cloud Servers
 
 For those who do not have experience like Devops or even with the use of containers and virtual machines the project will have full integration with orchestration systems and cloud servers that have API to abstract all part of configuration and infrastructure scalability, by default the system will use Kubernetes + Docker, however it will be possible to create integration modules for other types of orchestrators and or cloud servers
