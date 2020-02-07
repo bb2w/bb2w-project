@@ -26,6 +26,7 @@ Standard support list:
 - Digital Ocean - https://www.digitalocean.com/
 - Google Cloud - https://cloud.google.com/
 - Microsoft Azure - https://azure.microsoft.com/
+- Heroku - https://www.heroku.com/
 
 # Containers
 
@@ -51,7 +52,7 @@ Preferably, plugins should not require application reboot, only in specific case
 
 ### The standard for developing plugins will be released and linked in this document as soon as possible
 
-# IDE Core
+# IDE
 
 The fully web interface will be developed using plugins compatible with Atom (https://atom.io/) and VSCode (https://code.visualstudio.com/), initially the base application aims to create the components, which could be used for the construction of the construction platform itself, thus being defined as IDE Core the set of basic functions of the IDE, listed below
 
@@ -75,7 +76,7 @@ The fully web interface will be developed using plugins compatible with Atom (ht
 
 Below is the list of modules that will be used in the project for both structural features and layout, remembering that the IDE will be coded in Javascript and its frontend developed based on the Vuejs framework (https://vuejs.org/)
 
-### IDE Core
+### IDE
 
 **Layout** - Vuetify (https://vuetifyjs.com/)
 
@@ -90,3 +91,40 @@ Below is the list of modules that will be used in the project for both structura
 **Scrollbar** - 
 
 **Editor** - Monaco (https://github.com/Microsoft/monaco-editor)
+
+### Services
+
+As practically all web applications have at least one database integration, BB2W will be responsible for implementing and maintaining interface modules for services.
+
+**Databases SQL** - MySQL (https://www.npmjs.com/package/mysql), PostgreSQL (https://www.npmjs.com/package/pg), MariaDB (https://www.npmjs.com/package/mariadb), SQL Server (https://www.npmjs.com/package/mssql), Oracle (https://www.npmjs.com/package/oracle)
+
+**NoSQL** - MongoDB (https://www.npmjs.com/package/mongodb), Amazon DynamoDB (https://www.npmjs.com/package/aws-sdk), RethinkDB (https://www.npmjs.com/package/rethinkdb), Apache CouchDB (https://www.npmjs.com/package/nano), Apache Cassandra (https://www.npmjs.com/package/cassandra-driver)
+
+**Memory** - Redis (https://www.npmjs.com/package/ioredis), Amazon ElastiCache (https://www.npmjs.com/package/aws-sdk), Memcached (https://www.npmjs.com/package/memcached)
+
+**Search** - Elastic Search (https://www.npmjs.com/package/elasticsearch), Apache Solr (https://www.npmjs.com/package/solr-client)
+
+**Graph Database** - Neo4j (https://www.npmjs.com/package/neo4j-driver)
+
+**Metrics Database** - InfluxDB (https://www.npmjs.com/package/influx),
+
+**Queuing** - RabbitMQ (https://www.npmjs.com/package/amqplib), Apache Kafka (https://www.npmjs.com/package/node-rdkafka)
+
+**Storage** - Amazon S3 (https://www.npmjs.com/package/aws-sdk), Google Cloud Storage (https://www.npmjs.com/package/@google-cloud/storage), MinIO (https://www.npmjs.com/package/minio)
+
+**Big Data** - Apache Spark (https://www.npmjs.com/package/eclairjs)
+
+**OAuth** - Keycloak (https://www.npmjs.com/package/keycloak-connect), Passport (https://www.npmjs.com/package/passport)
+
+**Email** - SendGrid (https://www.npmjs.com/package/@sendgrid/mail), Mailgun (https://www.npmjs.com/package/mailgun)
+
+**SMS** - Till Mobile, Blower.io SMS
+
+**Others** - GraphQL (https://www.npmjs.com/package/graphql)
+
+### Integrations
+
+**Git** - https://www.npmjs.com/package/nodegit
+**New Relic** - https://www.npmjs.com/package/newrelic
+**Google APIs** - https://www.npmjs.com/package/googleapis
+**Firebase** - https://www.npmjs.com/package/firebase
