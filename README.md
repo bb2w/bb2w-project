@@ -21,7 +21,7 @@ I guarantee that a good part of Startups and technology companies die for the ti
 For those who do not have experience like Devops or even with the use of containers and virtual machines the project will have full integration with orchestration systems and cloud servers that have API to abstract all part of configuration and infrastructure scalability, by default the system will use Kubernetes + Docker, however it will be possible to create integration modules for other types of orchestrators and or cloud servers
 
 Standard support list:
-- Kubernetes + Docker - https://kubernetes.io
+- Kubernetes - https://kubernetes.io
 - Amazon Web Services (AWS) - https://aws.amazon.com/
 - Digital Ocean - https://www.digitalocean.com/
 - Google Cloud - https://cloud.google.com/
@@ -76,7 +76,7 @@ The fully web interface will be developed using plugins compatible with Atom (ht
 
 Below is the list of modules that will be used in the project for both structural features and layout, remembering that the IDE will be coded in Javascript and its frontend developed based on the Vuejs framework (https://vuejs.org/)
 
-### IDE
+## IDE
 
 **Layout** - Vuetify (https://vuetifyjs.com/)
 
@@ -92,39 +92,70 @@ Below is the list of modules that will be used in the project for both structura
 
 **Editor** - Monaco (https://github.com/Microsoft/monaco-editor)
 
-### Services
+## Services
 
 As practically all web applications have at least one database integration, BB2W will be responsible for implementing and maintaining interface modules for services.
 
-**Databases SQL** - MySQL (https://www.npmjs.com/package/mysql), PostgreSQL (https://www.npmjs.com/package/pg), MariaDB (https://www.npmjs.com/package/mariadb), SQL Server (https://www.npmjs.com/package/mssql), Oracle (https://www.npmjs.com/package/oracle)
+### SQL
 
-**NoSQL** - MongoDB (https://www.npmjs.com/package/mongodb), Amazon DynamoDB (https://www.npmjs.com/package/aws-sdk), RethinkDB (https://www.npmjs.com/package/rethinkdb), Apache CouchDB (https://www.npmjs.com/package/nano), Apache Cassandra (https://www.npmjs.com/package/cassandra-driver)
+- MySQL (https://www.npmjs.com/package/mysql) 
+- PostgreSQL (https://www.npmjs.com/package/pg)
+- MariaDB (https://www.npmjs.com/package/mariadb) 
+- SQL Server (https://www.npmjs.com/package/mssql) 
+- Oracle (https://www.npmjs.com/package/oracle)
 
-**Memory** - Redis (https://www.npmjs.com/package/ioredis), Amazon ElastiCache (https://www.npmjs.com/package/aws-sdk), Memcached (https://www.npmjs.com/package/memcached)
+### NoSQL 
+- MongoDB (https://www.npmjs.com/package/mongodb) 
+- Amazon DynamoDB (https://www.npmjs.com/package/aws-sdk)
+- RethinkDB (https://www.npmjs.com/package/rethinkdb)
+- Apache CouchDB (https://www.npmjs.com/package/nano)
+- Apache Cassandra (https://www.npmjs.com/package/cassandra-driver)
 
-**Search** - Elastic Search (https://www.npmjs.com/package/elasticsearch), Apache Solr (https://www.npmjs.com/package/solr-client)
+### Memory
+- Redis (https://www.npmjs.com/package/ioredis)
+- Amazon ElastiCache (https://www.npmjs.com/package/aws-sdk) 
+- Memcached (https://www.npmjs.com/package/memcached)
 
-**Graph Database** - Neo4j (https://www.npmjs.com/package/neo4j-driver)
+### Search 
+- Elastic Search (https://www.npmjs.com/package/elasticsearch)
+- Apache Solr (https://www.npmjs.com/package/solr-client)
 
-**Metrics Database** - InfluxDB (https://www.npmjs.com/package/influx),
+### Graph
+- Neo4j (https://www.npmjs.com/package/neo4j-driver)
 
-**Queuing** - RabbitMQ (https://www.npmjs.com/package/amqplib), Apache Kafka (https://www.npmjs.com/package/node-rdkafka)
+### Metrics
+- InfluxDB (https://www.npmjs.com/package/influx),
 
-**Storage** - Amazon S3 (https://www.npmjs.com/package/aws-sdk), Google Cloud Storage (https://www.npmjs.com/package/@google-cloud/storage), MinIO (https://www.npmjs.com/package/minio)
+### Queuing
+- Apache Kafka (https://www.npmjs.com/package/node-rdkafka)
+- RabbitMQ (https://www.npmjs.com/package/amqplib)
 
-**Big Data** - Apache Spark (https://www.npmjs.com/package/eclairjs)
+### Storage
+- Amazon S3 (https://www.npmjs.com/package/aws-sdk)
+- Google Cloud Storage (https://www.npmjs.com/package/@google-cloud/storage)
+- MinIO (https://www.npmjs.com/package/minio)
 
-**OAuth** - Keycloak (https://www.npmjs.com/package/keycloak-connect), Passport (https://www.npmjs.com/package/passport)
+### Big Data
+- Apache Spark (https://www.npmjs.com/package/eclairjs)
 
-**Email** - SendGrid (https://www.npmjs.com/package/@sendgrid/mail), Mailgun (https://www.npmjs.com/package/mailgun)
+### OAuth
+- Keycloak (https://www.npmjs.com/package/keycloak-connect)
+- Passport (https://www.npmjs.com/package/passport)
 
-**SMS** - Till Mobile, Blower.io SMS
+### Email
+- SendGrid (https://www.npmjs.com/package/@sendgrid/mail)
+- Mailgun (https://www.npmjs.com/package/mailgun)
 
-**Others** - GraphQL (https://www.npmjs.com/package/graphql)
+### SMS
+- Till Mobile
+- Blower.io SMS
 
-### Integrations
+### Others
+- GraphQL (https://www.npmjs.com/package/graphql)
 
-**Git** - https://www.npmjs.com/package/nodegit
-**New Relic** - https://www.npmjs.com/package/newrelic
-**Google APIs** - https://www.npmjs.com/package/googleapis
-**Firebase** - https://www.npmjs.com/package/firebase
+## Integrations
+
+- **Git** - https://www.npmjs.com/package/nodegit
+- **New Relic** - https://www.npmjs.com/package/newrelic
+- **Google APIs** - https://www.npmjs.com/package/googleapis
+- **Firebase** - https://www.npmjs.com/package/firebase
